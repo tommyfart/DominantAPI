@@ -1,1 +1,15 @@
-
+Dominant API Documentation
+------------------------------
+Loadstring (put this at the top of script):
+local dominant = loadstring(game:HttpGet("https://raw.githubusercontent.com/tommyfart/DominantAPI/refs/heads/main/dominant.lua"))()
+------------------------------
+Dominant API Functions
+------------------------------
+dominant.Load() -- Call this at start, REQUIRED for dominant to work.
+dominant.Attach() -- Attach dominant to roblox.
+dominant.Exec(1, textboxPath) -- Execute from Textbox  
+dominant.Exec(2)              -- Execute from Clipboard
+dominant.Clr(textboxPath) -- Clear textbox.
+dominant.New("folderName") -- Create a folder to store scripts.
+dominant.Save("folderName", textboxPath) -- Gets anything from textbox and saves it to folder. (BEING UPDATED SOON)
+dominant.File("folderNane", textboxPath) -- Shows all files from folder to load on textbox. (PROLLY NOT WORKING)
